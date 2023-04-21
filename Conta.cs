@@ -12,6 +12,20 @@ namespace Contas
         public DateTime DataAbertura { get; set; }
         public Decimal Saldo { get; set; }
 
+        public Conta()
+        {
+            Numero = DateTime.Now.ToString("yyyyMMddhhmmss");
+            DataAbertura = DateTime.Now;
+            Saldo = 0;
+        }
+
+        public Conta(string numero, DateTime dataAbertura, decimal saldo)
+        {
+            Numero = numero;
+            DataAbertura = dataAbertura;
+            Saldo = saldo;
+        }
+
         public string ExibirExtrato() //metodo sem parametro
         { //{Environment.NewLine} serve para quebrar as linhas
             return $"Conta n°:  {Numero}{Environment.NewLine}" +
