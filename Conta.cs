@@ -7,6 +7,7 @@ namespace Contas
 {
     public class Conta
     {
+        public static double TaxaRendimento = 0.5f;
         public string? Numero { get; set; }
         public DateTime DataAbertura { get; set; }
         public Decimal Saldo { get; set; }
@@ -41,5 +42,10 @@ namespace Contas
             Saldo += valor;
             System.Console.WriteLine($"O valor {valor} foi creditado e será debitado em {parcelas} vezes.");
         }
+
+        public static double CalcularRendimento(double capital, int meses)
+        {
+            return capital * Math.Pow(1 + TaxaRendimento, meses);
+        }  
     }
 }
