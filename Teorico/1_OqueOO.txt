@@ -1,0 +1,52 @@
+O que é Orientação a Objetos?
+
+De forma geral, desenvolvemos softwares para atacar problemas do mundo real, 
+seja resolvendo uma limitação, ou otimizando um processo. 
+Por isso, quanto melhor pudermos representar esse contexto do mundo real em nossos programas, 
+provavelmente vamos conseguir atendê-lo melhor.
+
+A Orientação a Objetos entra nesse cenário para nos permitir representar 
+o mundo real em nossos programas de forma eficiente, definindo as características,
+comportamentos e relações entre as “coisas” envolvidas no contexto.
+
+Trata-se de um paradigma, ou seja, um conjunto de conceitos e técnicas já testados e 
+aprovados ao longo dos anos, que pode ser aplicado às fases de modelagem e desenvolvimento dos softwares. 
+Além disso, esse paradigma não se limita a uma linguagem de programação, 
+na verdade a maioria das linguagens modernas suportam a Orientação a Objetos.
+
+Pilares
+O paradigma da Orientação a Objetos possui quatro conceitos básicos, chamados de pilares. 
+Eles serão descritos brevemente abaixo, e explorados na prática ao longo do curso:
+
+Abstração: é o processo de identificar quais elementos do mundo real serão representados no software, 
+e como isso será feito. 
+Precisamos identificar os nomes, as características, 
+comportamentos e relações entre os objetos envolvidos no cenário;
+
+Encapsulamento: é uma técnica que consiste em esconder os detalhes internos de uma classe, 
+expondo apenas aquilo que deve ser público;
+
+Herança: tal como no mundo real, na Orientação a Objetos os elementos podem herdar características 
+e comportamentos de outros. 
+Além de representar de forma fiel o mundo real, essa prática evita a repetição de código 
+e torna mais segura a manutenção;
+
+Polimorfismo: como o próprio nome sugere (poli + morfo) essa é 
+a capacidade de um objeto assumir diferentes formas de acordo com a necessidade.
+
+Podemos usar esse paradigma desde a fase de modelagem dos sistemas, 
+e utilizar por exemplo a UML (Unified Modeling Language) 
+para representar visualmente o contexto que vamos abordar. 
+
+A UML possui alguns diagramas para ilustrar sob diferentes óticas as classes e objetos, 
+que são os elementos fundamentais da OO. Após essa modelagem, 
+partimos então para o código, e nesse momento basicamente vamos traduzir para a sintaxe da 
+linguagem de programação aquilo que já ilustramos com a UML.
+
+==================================================================================================
+
+1 - o que são objetos ?
+ O que são Objetos?
+  - Elementos existentes no dominio de um problema.
+  - Coisas do mundo real(ou imaginário) que podem ser identificadas e descritas.
+
