@@ -11,12 +11,13 @@ namespace Contas
         public DateTime DataAbertura { get; set; }
         public Decimal Saldo { get; set; }
 
-        public void ExibirExtrato() //metodo sem parametro
-        {
-            System.Console.WriteLine($"Conta n°:  {Numero}");
-            System.Console.WriteLine($"Data de Abertura:  {DataAbertura.ToString("dd/MM/yyyy")}"); //formata data
-            System.Console.WriteLine($"Saldo:  {Saldo.ToString("c")}"); //formata valor
-            System.Console.WriteLine("-----------------------------------------------------");
+        public string ExibirExtrato() //metodo sem parametro
+        { //{Environment.NewLine} serve para quebrar as linhas
+            return $"Conta n°:  {Numero}{Environment.NewLine}" +
+                   $"Data de Abertura:  {DataAbertura.ToString("dd/MM/yyyy")}{Environment.NewLine}" + //formata data
+                   $"Saldo:  {Saldo.ToString("c")}{Environment.NewLine}" + //formata valor
+                   "-----------------------------------------------------";
+                ;
         }
 
         public void Depositar(decimal valor) //adiciona valor ao saldo
