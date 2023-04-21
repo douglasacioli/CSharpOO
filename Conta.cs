@@ -29,5 +29,17 @@ namespace Contas
         {
             Saldo -= valor;
         }
+
+        public void RealizarEmprestimo(decimal valor)
+        {
+            Saldo += valor;
+            System.Console.WriteLine($"O valor {valor} foi creditado e será debitado em 30 dias.");
+        }
+
+        public void RealizarEmprestimo (decimal valor, int parcelas)
+        {
+            Saldo += valor;
+            System.Console.WriteLine($"O valor {valor} foi creditado e será debitado em {parcelas} vezes.");
+        }
     }
 }
