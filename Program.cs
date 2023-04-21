@@ -5,5 +5,5 @@ conta.Numero = "1";
 conta.DataAbertura = DateTime.Today;
 conta.Saldo = 100;
 
-conta.RealizarEmprestimo(200, 4);
-System.Console.WriteLine(conta.ExibirExtrato());
+System.Console.WriteLine(Conta.TaxaRendimento);
+System.Console.WriteLine(Conta.CalcularRendimento(200,12));
